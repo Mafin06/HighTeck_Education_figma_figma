@@ -1,0 +1,614 @@
+
+body{
+    background-image: url("back2.jpg");
+    background-attachment:fixed;
+    background-size:cover;
+    background-color: rgb(132, 0, 255);
+
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{   
+    scroll-behavior: smooth;/*почемуто не работает*/
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav{
+
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #201642;
+    border-radius: 0 0 45px 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 10;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 80px;
+    padding: 20px;
+    transition: all ease-in-out 0.2s;
+}
+
+.logo img:hover{
+    transform: scale(120%);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation_links a{
+    padding: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.navigation_links a:hover{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section{
+    margin-top: 70px;
+}
+
+#ID_about{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-bottom: 250px;
+}
+
+#ID_about img{
+    width: 400px;
+    z-index: 1;
+
+    transform: translate(-20%);
+}
+
+.infa_about{
+
+    z-index: 2;
+    width: 350px;
+    height: auto;
+    padding: 30px;
+
+
+    font-size: 22px;
+
+    transform: translate(20%, 40%);
+
+    border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.652);
+}
+
+
+#ID_technology{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+
+.block_technology{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+   max-width: 800px;
+}
+
+.tech p{
+    text-align: center;
+    border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.652);
+    width: 160px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.tech img{
+    width: 60px;
+}
+
+.tech{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    
+}
+
+#ID_events{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+.Events{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.event img{
+    width: 280px;
+    transition: all ease-in-out 0.2s;
+    border-radius: 45px;
+}
+
+.event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    transition: all ease-in-out 0.2s;
+    padding: 0;
+
+}
+.event:hover img{
+    width: 330px;
+}
+.event:hover p{
+    width: 290px;
+}
+
+.event:hover a{
+    opacity: 1;
+}
+.event p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px 20px;
+
+    width:240px;
+    min-height: 180px;
+
+    background-color:rgba(0, 0, 0, 0.652);
+    border-radius: 0 0 45px 45px;
+    
+}
+.event a{
+    color: #0E83ED;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+}
+.event a:hover{
+    text-decoration: underline;
+}
+#ID_registration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.rob_with_wishes img{
+    width: 500px;
+}
+
+.rob_with_wishes{
+    position: relative;
+    z-index: 1;
+}
+
+.rob_with_wishes p{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 100px;
+
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.652);
+
+    border-radius: 0 0 0 45px;
+}
+
+form{
+    background-image: url("reg2.png");
+    background-size: cover;
+
+    padding: 10px;
+
+    border-radius: 45px;
+    border: 3px solid #fff;
+
+    height: 500px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    flex-direction: column;
+    z-index: 2;
+}
+
+form h2{
+    text-align: center;
+    margin: 0;
+}
+
+.krest{
+    display: flex;
+    justify-content: flex-end;
+    width: 350px;
+}
+.krest span{
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.652);
+    border-radius: 45px;
+    transition: all ease-in-out 0.3s;
+    margin: 10px;
+
+   
+}
+
+input:focus{
+    outline: none;
+
+}
+
+input{
+
+    border: none;
+}
+.krest span:hover{
+    background-color: #0E83ED;
+}
+
+.input_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+option{
+    background-color: #0E83ED;
+    border: none;
+}
+
+form .input_group label{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+form .input_group input{
+    width: 300px;
+    height: 30px;
+    border-radius: 45px;
+    cursor: pointer;
+    padding: 1px 15px;
+}
+.event_choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    margin-top: 1vw;
+
+
+}
+
+select{
+    width: 330px;
+    height: 35px;
+    padding: 1px 10px;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.reg_buttons{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+    width: 350px;
+}
+
+button{
+    margin: 10px;
+    padding:12px 10px;
+
+    border-radius: 45px;
+    border: none;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.652);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover{
+    background-color: #0E83ED;
+}
+.event_choices label{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#img_for_beauty{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+}
+.img_for_beauty_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img_for_beauty_container p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-size: 45px;
+    height: 5vw;
+
+    background-color: rgba(0, 0, 0, 0.652);
+    border-radius: 0 0 45px 45px;
+
+    transition: all ease-in-out 0.2s;
+}
+
+.img_for_beauty_container img{
+    width: 1000px;
+}
+
+footer{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.footer_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.social_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo img{
+    width: 100px;
+    transform: translateX(20%);
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line img{
+    height: 160px;
+    width: 5px;
+    
+}
+
+.scroll_button img{
+    width: 80px;
+    padding: 15px;
+    transition: all ease-in-out 0.2s;
+}
+
+.scroll_button img:hover{
+    transform: scale(115%);
+}
+
+.link img{
+    width: 60px;
+    padding: 10px;
+    transition: all ease-in-out 0.2s;
+}
+
+.link img:hover{
+    transform: scale(115%);
+}
+
+.email_link a{
+    transition: all ease-in-out 0.2s;
+}
+
+.email_link a:hover{
+    font-size: 26px;
+}
+
+label{
+    width: 300px;
+    display: block;
+    text-align: left;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btns_name_surname{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.btns_name_surname .input_group input, .btns_name_surname .input_group label{
+    width: 120px;
+}
+
+.img_for_beauty_container a:hover{
+    color: #0E83ED;
+}
+
+
+
+@media (max-width:768px){
+    body{
+        font-size: 22px;
+    }
+
+    .img_for_beauty_container img{
+        width: 380px;
+        border-radius: 45px;
+    }
+    
+    .img_for_beauty_container p{
+        font-size: 20px;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    
+    .line img{
+        transform: rotate(90deg);
+        height: 70vw;
+        width: 1vw;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer_links{
+        margin: 5vw 0;
+    
+    
+    }
+    
+    .navigation_links{
+        text-align: center;
+    }
+    
+    footer .logo img{
+        width: 120px;
+        transform: translate(0%, 70%);
+    
+    }
+    
+    #ID_about img{
+        transform: translate(0%,0%);
+        width: 340px;
+    }
+    #ID_about{
+        flex-direction: column-reverse;
+        margin: 50vw 0 0 0;
+    }
+    .infa_about{
+        width: 280px;
+        transform: translate(0%,-20%);
+    }
+    footer .navigation_links{
+        transform: translateY(-40%);
+    }
+    
+    .footer_links{
+        transform: translateY(-40%);
+    }
+    h2{
+        text-align: center;
+    }
+
+    .rob_with_wishes img{
+        border-radius: 45px;
+        width: 90vw;
+    }
+
+    .rob_with_wishes p{
+        border-radius: 0 0 45px 45px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+
+    .navigation_links a{
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .navigation_links a:hover{
+        font-weight: bold;
+    }
+
+    .navigation_links{
+        margin: 0px 0 15px 0;
+        justify-content: flex-start;
+    }
+
+    
+}
+
